@@ -5,11 +5,6 @@
 ````markdown
 # 🌱 Raízes Locais — Sistema de Gestão de Produção Agrícola
 
-> 💡 *Sistema web voltado para pequenos produtores rurais, auxiliando na gestão de entradas e saídas de produtos agrícolas,controle de estoque, validação administrativa e execução logística.*
-
-📘 Desenvolvido como parte da **Etapa 02 do Trabalho de Conclusão de Disciplina (TCD)** da matéria
-**Engenharia de Software III (ESOF 3)**.
-
 ---
 
 ## 🧩 Sumário
