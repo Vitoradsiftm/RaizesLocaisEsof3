@@ -16,7 +16,7 @@ Composer (opcional, se usar bibliotecas PHP externas)
 
 🔧 Instalação e Configuração
 1. Clonar o projeto
-git clone https://github.com/seu-usuario/raizesLocais.git
+git clone https://github.com/Vitoradsiftm/engenhariaDeSoftwate3
 
 2. Configurar o ambiente local
 Instale o XAMPP e inicie Apache + MySQL
