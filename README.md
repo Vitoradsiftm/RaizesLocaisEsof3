@@ -1,43 +1,91 @@
+Perfeito! 👌
+Aqui está **todo o conteúdo pronto em um único bloco Markdown completo**, já formatado e estilizado para você apenas **copiar e colar no seu README.md** no GitHub.
+
+Basta dar **Ctrl + C** e colar no arquivo.
+
+---
+
+````markdown
 # 🌱 Raízes Locais — Sistema de Gestão de Produção Agrícola
-Sistema web desenvolvido para auxiliar pequenos produtores na gestão de entradas e saídas de produtos agrícolas, controle de estoque, validação administrativa e execução logística. Este projeto foi desenvolvido como parte da Etapa 02 do Trabalho de Conclusão de Disciplina (TCD) da matéria Engenharia de Software III (ESOF 3).
 
-📦 Requisitos do Ambiente
-PHP 8.0 ou superior
+> 💡 *Sistema web voltado para pequenos produtores rurais, auxiliando na gestão de entradas e saídas de produtos agrícolas, controle de estoque, validação administrativa e execução logística.*
 
-MySQL 5.7 ou superior
+📘 Desenvolvido como parte da **Etapa 02 do Trabalho de Conclusão de Disciplina (TCD)** da matéria **Engenharia de Software III (ESOF 3)**.
 
-Servidor Apache (recomendado: XAMPP)
+---
 
-Navegador moderno (Chrome, Firefox, Edge)
+## 🧩 Sumário
 
-Python 3.11 (para testes automatizados com Selenium)
+- [📦 Requisitos do Ambiente](#-requisitos-do-ambiente)
+- [🔧 Instalação e Configuração](#-instalação-e-configuração)
+- [📁 Estrutura do Projeto](#-estrutura-do-projeto)
+- [🚀 Como Executar o Sistema](#-como-executar-o-sistema)
+- [🧪 Testes Automatizados](#-testes-automatizados)
+- [✅ Boas Práticas Aplicadas](#-boas-práticas-aplicadas)
+- [👨‍💻 Equipe](#-equipe)
+- [💚 Licença](#-licença)
 
-Composer (opcional, se usar bibliotecas PHP externas)
+---
 
-🔧 Instalação e Configuração
-1. Clonar o projeto
+## 📦 Requisitos do Ambiente
+
+| Componente        | Versão mínima | Observação |
+|-------------------|---------------|-------------|
+| PHP               | 8.0           | Backend principal |
+| MySQL             | 5.7           | Banco de dados relacional |
+| Apache            | —             | Recomendado: XAMPP |
+| Navegador         | —             | Chrome, Firefox ou Edge |
+| Python            | 3.11          | Utilizado para testes automatizados (Selenium) |
+| Composer          | Opcional      | Para gerenciamento de dependências PHP |
+
+---
+
+## 🔧 Instalação e Configuração
+
+### 1️⃣ Clonar o repositório
+```bash
 git clone https://github.com/Vitoradsiftm/engenhariaDeSoftwate3
+````
 
-2. Configurar o ambiente local
-Instale o XAMPP e inicie Apache + MySQL
+### 2️⃣ Configurar o ambiente local
 
-Copie o projeto para C:\xampp\htdocs\raizesLocais
+1. Instale o **XAMPP** e inicie **Apache + MySQL**
+2. Copie o projeto para:
 
-Crie o banco de dados no phpMyAdmin com o nome raizeslocais
+   ```
+   C:\xampp\htdocs\raizesLocais
+   ```
+3. Crie o banco de dados no **phpMyAdmin**:
 
-Importe o arquivo raizeslocais.sql (disponível na pasta /bd/)
+   ```sql
+   CREATE DATABASE raizeslocais;
+   ```
+4. Importe o arquivo SQL:
 
-3. Configurar conexão com o banco
-Edite o arquivo conexao.php:
+   ```
+   /bd/raizeslocais.sql
+   ```
 
-php
+### 3️⃣ Configurar a conexão com o banco
+
+Edite o arquivo `conexao.php` conforme o exemplo:
+
+```php
+<?php
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db = "raizeslocais";
+$db   = "raizeslocais";
+
 $conn = mysqli_connect($host, $user, $pass, $db);
-📁 Estrutura do Projeto
-Código
+?>
+```
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
 raizesLocais/
 ├── modelo/           # DAOs e lógica de negócio
 ├── visao/            # Interfaces do usuário (HTML/PHP)
@@ -49,52 +97,87 @@ raizesLocais/
 ├── tests/            # Testes automatizados com Selenium
 ├── conexao.php       # Conexão com o banco
 └── README.md         # Este arquivo
-🚀 Como Executar o Sistema
-Acesse no navegador:
+```
 
-Código
-http://localhost/raizesLocais/login.php
-Faça login com um usuário cadastrado
+---
 
-Navegue pelas funcionalidades:
+## 🚀 Como Executar o Sistema
 
-Cadastro de produtos
+1. Acesse no navegador:
 
-Registro de entradas e saídas
+   ```
+   http://localhost/raizesLocais/login.php
+   ```
 
-Relatórios administrativos e logísticos
+2. Faça login com um usuário cadastrado.
 
-Execução logística com validação de estoque
+3. Navegue pelas funcionalidades:
 
-🧪 Testes Automatizados
-Requisitos:
-Python 3.11
+   * 🧺 **Cadastro de produtos**
+   * 📦 **Registro de entradas e saídas**
+   * 📊 **Relatórios administrativos e logísticos**
+   * 🚚 **Execução logística com validação de estoque**
 
-Selenium
+---
 
-Instalar dependências:
-bash
+## 🧪 Testes Automatizados
+
+### ⚙️ Requisitos
+
+* Python 3.11
+* Selenium
+
+### 📥 Instalar dependências
+
+```bash
 pip install selenium
-Rodar testes:
+```
+
+### ▶️ Executar testes
+
+```bash
 cd tests/
 python test_login.py
 python test_cadastrar_produto.py
-Os testes simulam ações reais no navegador, como login e cadastro de produtos.
+```
 
-✅ Boas Práticas Aplicadas
-Modularização com DAOs e separação MVC
+> 💬 Os testes simulam ações reais no navegador, garantindo o correto funcionamento das principais funcionalidades do sistema.
 
-Versionamento com Git
+---
 
-Validação de dados e controle de sessão
+## ✅ Boas Práticas Aplicadas
 
-Testes automatizados com Selenium
+✔️ **Arquitetura MVC (Model-View-Controller)**
+✔️ **Modularização com DAOs e camadas bem definidas**
+✔️ **Versionamento com Git e GitHub**
+✔️ **Validação de dados e controle de sessão**
+✔️ **Testes automatizados com Selenium**
+✔️ **Layout responsivo e acessível**
+✔️ **Comentários explicativos no código**
 
-Layout responsivo e acessível
+---
 
-Comentários explicativos no código
+## 👨‍💻 Equipe
 
-👨‍💻 Equipe
-Vitor Augusto Correia dos Reis
+| Nome                               | Função                                 |
+| ---------------------------------- | -------------------------------------- |
+| **Vitor Augusto Correia dos Reis** | Desenvolvimento, testes e documentação |
 
+---
 
+## 💚 Licença
+
+Este projeto foi desenvolvido para fins acadêmicos e está sob a licença **MIT**.
+Sinta-se à vontade para estudar, modificar e aprimorar o código. 🌿
+
+---
+
+> *"Fortalecendo o campo com tecnologia e inovação."* 🌾
+> **Raízes Locais** — Engenharia de Software III • IFTM
+
+```
+
+---
+
+Deseja que eu adicione **badges visuais** no topo (como `PHP | MySQL | Selenium | MVC | MIT License`)? Isso deixa o README ainda mais bonito e profissional no GitHub.
+```
