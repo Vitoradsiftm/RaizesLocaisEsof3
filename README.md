@@ -76,7 +76,6 @@ Instalar dependências:
 bash
 pip install selenium
 Rodar testes:
-bash
 cd tests/
 python test_login.py
 python test_cadastrar_produto.py
@@ -98,4 +97,4 @@ Comentários explicativos no código
 👨‍💻 Equipe
 Vitor Augusto Correia dos Reis
 
-[Outros integrantes, se houver]
+
