@@ -174,7 +174,6 @@ Sinta-se à vontade para estudar, modificar e aprimorar o código. 🌿
 
 ```
 
----
 
-Deseja que eu adicione **badges visuais** no topo (como `PHP | MySQL | Selenium | MVC | MIT License`)? Isso deixa o README ainda mais bonito e profissional no GitHub.
-```
+
+
