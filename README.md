@@ -1,7 +1,4 @@
-Perfeito! 👌
-Aqui está **todo o conteúdo pronto em um único bloco Markdown completo**, já formatado e estilizado para você apenas **copiar e colar no seu README.md** no GitHub.
 
-Basta dar **Ctrl + C** e colar no arquivo.
 
 ---
 
