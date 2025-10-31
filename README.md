@@ -172,7 +172,6 @@ Sinta-se à vontade para estudar, modificar e aprimorar o código. 🌿
 > *"Fortalecendo o campo com tecnologia e inovação."* 🌾
 > **Raízes Locais** — Engenharia de Software III • IFTM
 
-```
 
 
 
